@@ -1,0 +1,155 @@
+ <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % 
+  % Author:  Tyler Treadway
+  % Date:    4-20-2020 
+  % Course:  ADPR297 Web Design w/Professor Boone
+  % Site:    https://preownedvideogames.000webhostapp.com
+  % Description: PreOwnedVideoGames allows site visitors to see our
+  %              used XBOX, Wii and GameCube videogames for sale.  Site users
+  %              can email the site owner to check inventory and verify order.
+  %              Once verified product ship to buyer COD.
+  % 
+  % Page Name: deals.html
+  % Page Summary & Features: 
+  %      - Displays QR code (generated from https://www.qrcode-monkey.com/)
+  %      - Scanning the QR code w/QR reader takes end-user to promotion discount page (sale.html)
+  %      - Google Translate to accomodate international site visitors
+  %               
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Deals & Promotions</title>
+<!-- META TAGE -->
+<meta charset="utf-8">
+  <meta name="author" content="Tyler Treadway">
+  <meta name="description" content="Pre-Owned XBOX WII GAMECUBE Video Games For Sale">
+  <meta name="keywords" content="Pre, Owned, Pre-Owned, Video, Video Games, Games, Used, Xbox, Wii, GameCube">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS -->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Black border */
+hr {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border: 2px solid black;
+  border-radius: 5px
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header and footer */
+.header {
+  background-color: #FFEAA7;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #89c4f4;
+  text-align: center;
+  padding: 5px;
+} 
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  font-weight: bold;
+  background-color: #89c4f4;
+}	
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #FFEAA7;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* indentation */
+div.a {
+  text-indent: 50px;
+}
+ 
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+</style>
+</head>
+<body style="background-color:#FFEAA7">
+<div style="text-align:center" id="google_translate_element"></div>
+
+
+	<img cellpadding="0" padding="0" class="displayed" 
+	style="align:middle; text-align: center; height: 100px; width: 200px" src="sale.png" alt="sale image">
+
+<hr>
+<div class="topnav">
+  <a href="index.html">HOME</a>
+  <a href="xbox.html">XBOX</a>
+    <a href="wii.html">WII</a>
+    <a href="gamecube.html">GAMECUBE</a>
+  <a href="deals.html">DEALS</a>
+  <a href="order.html">ORDER</a>
+  <a href="whyus.html">WHY US</a>
+  <a href="contact.html">CONTACT US</a>
+</div>
+<table>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<hr>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<tr>
+	<h2 style="text-align:center; color:#EB2A2B"> Scan the QR code for our daily discount.</h2>
+	</tr>
+<tr>
+	<img cellpadding="0" padding="0" class="displayed" 
+	style="align:middle; height: 240px; width: 246px" src="qr-code.png" alt="qr-code image">
+</tr>
+	</table>
+	<br>
+<div class="footer"> Site Created by Tyler Treadway <a href="mailto:TTreadway@suffolk.edu?Subject=ADPR297%20Site%20Feedback" target="_top">TTreadway@suffolk.edu</a>
+</div>
+</body>
+</html>

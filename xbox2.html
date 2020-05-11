@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Xbox Consoles</title>
+<meta charset="utf-8">
+  <meta name="author" content="Tyler Treadway">
+  <meta name="description" content="Gaming Genres and Gaming Systems Overview">
+  <meta name="keywords" content="Gaming System Overview, Gaming Console, GameBoy, WII, Xbox, PlayStation">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- define style tags -->
+<style>
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  max-height: 300px;
+  overflow: auto;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+  background: #fff;
+}
+
+tr:nth-child(odd) td {
+  background-color: #eee;
+}
+
+/* fixed headers */
+
+table,
+thead,
+tbody {
+  display: block;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+}
+
+tr {
+  display: flex;
+}
+
+th,
+td {
+  flex: 1;
+  min-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+label{
+ width:   100px;
+ display: inline-block;
+ text-align: right;
+ }
+</style>
+  <title>Place Game Order</title>
+  	<script src="https://smtpjs.com/v3/smtp.js">
+        </script>  
+	<!--
+    To : "pete.treadway@gmail.com,ptreadway@suffolk.edu",
+	document.getElementById("email_address").innerHTML,
+	arguments[0]
+	-->
+	<script type="text/javascript">
+		function sendEmail() {
+		var email_to_send_to = document.getElementById("email_address").value;
+			Email.send({
+            SecureToken : "9e7d0b6e-5977-4749-8953-7e447e28abd4",
+	        To : email_to_send_to,
+            From : "ADPR297@gmail.com",
+	        Cc : "pete.treadway@gmail.com",
+			Subject : "Video Game Order ABCDEFGHIJ",
+		    Body : "<H1>Order Summary</H1><br><br>Your order has been placed.."
+			})
+			.then(function(message){
+				alert("Email successfully sent.")
+			});
+		}
+	</script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+/* Black border (no margin above or below)*/
+hr {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border: 2px solid black;
+  border-radius: 5px
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header and footer */
+.header {
+  background-color: #CCF7AF;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #CCF7AF;
+  text-align: center;
+  padding: 5px;
+} 
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  font-weight: bold;
+  background-color: #FF0000;
+}	
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #cbf025;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="background-color:#81ecec">
+<div style="text-align:center" id="google_translate_element"></div>
+<hr>
+
+<div class="topnav">
+  <a href="gameboy.html">GAMEBOY</a>
+  <a href="wii.html">WII</a>
+  <a href="xbox.html">XBOX</a>
+  <a href="playstation.html">PLAYSTATION</a>
+    <a href="whyus.html">CURRENT PROMOTION</a>
+  <a href="contact.html">CONTACT US</a>
+</div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<div class="row">
+    <h2>Buy a gently used Xbox game</h2>
+  <form method="post">
+  <strong>Enter Order Information:</strong><br />
+  <label>Name: </label>
+  <input name="yourname" type="text" size="40">
+    <label>Email Address: </label>
+  <input id="email_address" type="email" required size="45"><br>
+      <label>Order Notes: </label>
+  <textarea id="mytextarea"  name="notes" rows = "3" cols ="100" maxlength="300">  
+Enter order information here....
+</textarea>
+  
+  <p><strong>Shipping Method</strong><br />
+  <select name="shipping_method">
+  <option value="standard">Standard Shipping</option>
+  <option value="overnight">Overnight Shipping</option>
+  </select>
+  </p>
+  <p><input type="button" src="email3.png" value="Send Email" onclick="sendEmail('ptreadway@suffolk.edu')"/></p>
+ <div class=wrap>
+     <table  cellspacing="10" cellpadding="0">
+	  <thead>
+        <tr>
+            <th>Game #</th>
+            <th>Game Title</th>
+            <th>Year Made</th>
+            <th>Price</th>
+            <th>Condition</th>			
+            <th>Comment</th>
+        </tr>
+		 </thead>
+		  <tbody>
+        <tr>
+            <td>XBOX-1</td>
+            <td>Flying Hammers</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+        <tr>
+             <td>XBOX-2</td>
+            <td>Flying Squirrels</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+        <tr>
+            <td>XBOX-3</td>
+            <td>Flying Pillows</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		        <tr>
+            <td>XBOX-4</td>
+            <td>Flying Numb Chucks</td>
+            <td>1999</td>
+			<td>$10.99</td>
+			<td>Mint</td>
+			<td>Top 10 Game in 1999</td>
+        </tr>
+		</tbody>
+    </table>
+	</div>
+	    <br />
+
+	<!-- Auto width -->
+	<!--
+<button class="btn" src="email3.png" alt="email" onclick="sendEmail()">Email Games U Want to Buy</button>
+<button class="btn" style="width:100%"><i class="fa fa-download"></i> Download Xbox Games For Sale</button>
+-->
+  
+ </div>
+ </form>
+<div class="footer"> Site Created by Tyler Treadway <a href="mailto:TTreadway@suffolk.edu?Subject=ADPR297%20Site%20Feedback" target="_top">TTreadway@suffolk.edu</a> 
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Send Email</title>
+	<script src="https://smtpjs.com/v3/smtp.js">
+        </script>  
+
+	<script type="text/javascript">
+		function sendEmail() {
+			Email.send({
+
+    SecureToken : "9e7d0b6e-5977-4749-8953-7e447e28abd4",
+    To : "pete.treadway@gmail.com,ptreadway@suffolk.edu",
+    From : "ADPR297@gmail.com",
+
+				Subject : "Sale Sale Sale!!!",
+				Body : "Hello again my friend..."
+
+
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+			});
+		}
+	</script>
+</head>
+<body>  
+	<form method="post">
+		<input type="button" value="Send Email" onclick="sendEmail()"/>
+	</form>  
+</body>
+</html>

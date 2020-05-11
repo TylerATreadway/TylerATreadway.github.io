@@ -1,0 +1,165 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<title>Your Site For XBOX, WII and GAMECUBE Pre-Owned Games</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Black border (no margin above or below)*/
+hr {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border: 2px solid black;
+  border-radius: 5px
+}
+
+body {
+  margin: 0;
+  bgcolor: #89c4f4;
+}
+
+/* Style the header and footer */
+.header {
+  background-color: #FFEAA7;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #89c4f4;
+  text-align: center;
+  padding: 5px;
+} 
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #89c4f4;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 7px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #FF7675;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 1000);
+});
+</script>
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+</head>
+<body style="background-color:#FFEAA7">
+<div style="text-align:center" id="google_translate_element"></div>	
+
+<div class="header">
+  <h3>Pre-Owned Xbox, Playstation and Wii Games For Sale</h2>
+</div>
+<hr>
+
+<div class="topnav">
+  <a href="xbox.html">XBOX</a>
+    <a href="wii.html">WII</a>
+    <a href="gamecube.html">GAMECUBE</a>
+  <a href="deals.html">DEALS</a>
+  <a href="order.html">ORDER</a>
+  <a href="whyus.html">WHY US</a>
+  <a href="contact.html">CONTACT US</a>
+</div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<hr>
+<br>
+
+<div class="center" style="max-width:500px">
+  <img class="mySlides" src="xbox1.jpg" style="height:500px; width:350px">
+  <img class="mySlides" src="wii1.png" style="height:500px; width:350px">
+  <img class="mySlides" src="xbox2.jpg" style="height:500px; width:350px">
+  <img class="mySlides" src="xbox3.jpg" style="height:500px; width:350px">
+  <img class="mySlides" src="wii2.jpg" style="height:500px; width:350px">
+  <img class="mySlides" src="xbox4.jpg" style="height:500px; width:350px">
+  <img class="mySlides" src="wii3.jpg" style="height:500px; width:350px">
+  <img class="mySlides" src="gamecube1.png" style="height:500px; width:350px">
+  <img class="mySlides" src="gamecube2.png" style="height:500px; width:350px">
+  <img class="mySlides" src="xbox5.jpg" style="height:500px; width:350px">
+  <img class="mySlides" src="xbox6.jpg" style="height:500px; width:350px">
+  <img class="mySlides" src="wii4.png" style="height:500px; width:350px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<br>
+<div class="footer"> Site Created by Tyler Treadway <a href="mailto:TTreadway@suffolk.edu?Subject=ADPR297%20Site%20Feedback" target="_top">TTreadway@suffolk.edu</a> 
+</div>
+</body>
+</html>
