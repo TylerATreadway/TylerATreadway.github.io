@@ -5,8 +5,7 @@
 
 ```
 This repository contains the code that behind my personal webpage.
-
-You can see the production version live at https://TylerATreadway.github.io, which is built from the master branch.
+You can see the production site at https://TylerATreadway.github.io, which is built from the master branch.
 ```
 
 
